@@ -1,0 +1,68 @@
+/* Configurações Gerais */
+body {
+  background-color: white; /* Fundo branco conforme solicitado */
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centraliza todo o conteúdo da página */
+}
+
+/* Espaçamento do Topo */
+#topo-pagina {
+  padding: 40px 20px;
+}
+
+#topo-pagina h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Linha divisória discreta */
+hr {
+  width: 50%;
+  border: 0;
+  border-top: 1px solid #dddddd;
+  margin: 20px auto;
+}
+
+/* Container de cada Ponto Turístico */
+.ponto-container {
+  width: 600px; /* Largura fixa para manter o alinhamento */
+  margin: 40px auto; /* Centraliza o bloco na tela e dá espaço entre eles */
+  padding: 20px;
+}
+
+/* Estilo da Imagem que é Link */
+.foto-link {
+  width: 100%; /* A imagem ocupa toda a largura do container (600px) */
+  height: auto;
+  border: 1px solid #cccccc;
+  display: block;
+  margin-bottom: 20px; /* Espaço entre a foto e o nome abaixo dela */
+}
+
+/* Efeito visual ao passar o mouse na foto */
+.foto-link:hover {
+  border-color: #3b5998;
+  opacity: 0.9;
+}
+
+/* Estilo do Nome e Descrição */
+h2 {
+  margin-bottom: 10px;
+  color: #222222;
+}
+
+p {
+  line-height: 1.5;
+  color: #666666;
+}
+
+/* Rodapé */
+#rodape {
+  margin-top: 60px;
+  padding: 20px;
+  border-top: 1px solid #eeeeee;
+  font-size: 12px;
+}
