@@ -1,11 +1,19 @@
-/* Configurações Gerais */
+/* Aqui é onde a estrutura do código HTML é estilizada.
+As propriedades em cada bloco estão organizadas da seguinte ordem: 
+1. Posicionamento (Onde o elemento se coloca)
+2. Modelo de Caixa (Tamanho e espaçamento)
+3. Tipografia (Como o texto se comporta)
+4. Visual (Cores de fundo, bordas, sombras) */
+
+/* --- Configurações Gerais --- */
 body {
-  background-color: white; /* Fundo branco conforme solicitado */
-  color: #333333;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  /* não há; re Posicionamento */
+  margin: 0; /* re Modelo de Caixa */
   padding: 0;
-  text-align: center; /* Centraliza todo o conteúdo da página */
+  color: #333333; /* re Tipografia */
+  font-family: Poppins, Helvetica, sans-serif;
+  text-align: center;
+  background-color: white; /* re Visual */
 }
 
 /* Espaçamento do Topo */
@@ -14,16 +22,18 @@ body {
 }
 
 #topo-pagina h1 {
-  font-size: 32px;
   margin-bottom: 10px;
+  color: #003366;
+  font-family: "Lora", Helvetica, sans-serif;
+  font-size: 32px;
 }
 
 /* Linha divisória discreta */
 hr {
   width: 50%;
+  margin: 20px auto;
   border: 0;
   border-top: 1px solid #dddddd;
-  margin: 20px auto;
 }
 
 /* Container de cada Ponto Turístico */
@@ -35,34 +45,45 @@ hr {
 
 /* Estilo da Imagem que é Link */
 .foto-link {
+  display: block;
   width: 100%; /* A imagem ocupa toda a largura do container (600px) */
   height: auto;
-  border: 1px solid #cccccc;
-  display: block;
   margin-bottom: 20px; /* Espaço entre a foto e o nome abaixo dela */
+  border: 1px solid #cccccc;
+  border-radius: 15px;
 }
 
 /* Efeito visual ao passar o mouse na foto */
 .foto-link:hover {
-  border-color: #3b5998;
+  background-color: #cfb53b;
   opacity: 0.9;
 }
 
 /* Estilo do Nome e Descrição */
 h2 {
   margin-bottom: 10px;
-  color: #222222;
+  color: #003366;
+  font-family: "Lora", Helvetica, sans-serif;
+  text-align: left;
 }
 
+/* Parágrafo padrão */
 p {
-  line-height: 1.5;
   color: #666666;
+  line-height: 1.5;
+}
+
+/* Parágrafo descrição */
+p.descricao {
+  color: #666666;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 /* Rodapé */
 #rodape {
   margin-top: 60px;
   padding: 20px;
-  border-top: 1px solid #eeeeee;
   font-size: 12px;
+  border-top: 1px solid #eeeeee;
 }

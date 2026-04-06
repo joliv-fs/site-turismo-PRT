@@ -1,0 +1,141 @@
+/* Aqui é onde a estrutura do código HTML é estilizada.
+As propriedades em cada bloco estão organizadas da seguinte ordem: 
+1. Posicionamento (Onde o elemento se coloca)
+2. Modelo de Caixa (Tamanho e espaçamento)
+3. Tipografia (Como o texto se comporta)
+4. Visual (Cores de fundo, bordas, sombras) */
+
+/* --- Configurações Gerais --- */
+body {
+  /* não há; re Posicionamento */
+  margin: 0; /* re Modelo de Caixa */
+  padding: 0;
+  color: #333333; /* re Tipografia */
+  font-family: Poppins, Helvetica, sans-serif;
+  text-align: center;
+  background-color: white; /* re Visual */
+}
+
+/* Espaçamento do Topo */
+#topo-pagina {
+  padding: 40px 20px;
+}
+
+#topo-pagina h1 {
+  margin-bottom: 10px;
+  color: #003366;
+  font-family: "Lora", Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+/* Linha divisória discreta */
+hr {
+  width: 50%;
+  margin: 20px auto;
+  border: 0;
+  border-top: 1px solid #dddddd;
+}
+
+/* Container de cada Ponto Turístico */
+.ponto-container {
+  width: 600px; /* Largura fixa para manter o alinhamento */
+  margin: 40px auto; /* Centraliza o bloco na tela e dá espaço entre eles */
+  padding: 20px;
+}
+
+/* Estilo da Imagem que é Link */
+.foto-link {
+  display: block;
+  width: 100%; /* A imagem ocupa toda a largura do container (600px) */
+  height: auto;
+  margin-bottom: 20px; /* Espaço entre a foto e o nome abaixo dela */
+  border: 1px solid #cccccc;
+  border-radius: 15px;
+}
+
+/* Efeito visual ao passar o mouse na foto */
+.foto-link:hover {
+  background-color: #cfb53b;
+  opacity: 0.9;
+}
+
+/* Estilo do Nome e Descrição */
+h2 {
+  margin-bottom: 10px;
+  color: #003366;
+  font-family: "Lora", Helvetica, sans-serif;
+  text-align: left;
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: #003366;
+  font-family: "Lora", Helvetica, sans-serif;
+  text-align: left;
+}
+
+p {
+  color: #666666;
+  line-height: 1.5;
+}
+
+/* Parágrafo descrição */
+p.descricao {
+  color: #666666;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Rodapé */
+#rodape {
+  margin-top: 60px;
+  padding: 20px;
+  font-size: 12px;
+  border-top: 1px solid #eeeeee;
+}
+
+/* --- Estilos para a Página de Destaque --- */
+
+/* Container que limita a largura do texto para não ficar cansativo de ler */
+.conteudo-detalhado {
+  width: 800px; /* Um pouco mais largo que a home para dar destaque */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify; /* Texto justificado para facilitar a leitura */
+  background-color: #ffffff;
+}
+
+/* Imagem principal da página secundária */
+.imagem-destaque {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 8px; /* Arredonda levemente os cantos */
+}
+
+/* Estilo para os parágrafos de história */
+.texto-historia p {
+  margin-bottom: 20px; /* Dá espaço entre um parágrafo e outro */
+  font-size: 18px;
+  line-height: 1.8; /* Aumenta o espaço entre as linhas do texto */
+}
+
+/* Estilo do link de voltar */
+.navegacao {
+  margin-top: 40px;
+  text-align: center; /* Centraliza apenas o botão de voltar */
+}
+
+.botao-voltar {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none; /* Remove o sublinhado do link */
+  font-weight: bold;
+  background-color: #003366;
+  border-radius: 5px;
+}
+
+.botao-voltar:hover {
+  background-color: #2d4373; /* Cor um pouco mais escura ao passar o mouse */
+}
